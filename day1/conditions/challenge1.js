@@ -1,5 +1,7 @@
 const prompt = require("prompt-sync")();
+
 let mont = +prompt("Entrer Montant de commande :");
+
 if (mont < 100) {
     console.log("Frais livraison : 30")
     console.log("Total à payer : " + (mont + 30))
